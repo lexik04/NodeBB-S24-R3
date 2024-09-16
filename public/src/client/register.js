@@ -131,7 +131,7 @@ define('forum/register', [
                 if (results.every(obj => obj.status === 'rejected')) {
                     showSuccess(username_notify, successIcon);
                 } else {
-                    showError(username_notify, '[[error:username-taken'+ ' Maybe try ' + username + 'suffix instead]]'); //Got help from teammate Andrew.
+                    showError(username_notify, '[[error:username-taken. Maybe try ' + username + 'suffix instead]]');// Got help from teammate Andrew.
                 }
 
                 callback();
